@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yesteryear&display=swap')
+@import reset.css
+
+$font-stack: Helvetica, sans-serif
+$primary-color: #333
+
+body
+  width: 100%
+  max-width: 1080px
+  min-width: 555px
+  margin: auto
+  font: 100% $font-stack
+  color: $primary-color
+  background-color: #111111
+  @media screen and (max-width: 575px)
+    width: 555px
+    min-width: 555px
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: calc(100% - 20px)
+  max-width: 1080px
+  min-width: 575px
+  padding: 20px 10px
+  @media screen and (max-width: 575px)
+    width: 555px
+    min-width: 555px
+.social-networks-list
+  display: flex
+  list-style-type: none
+  li:not(:last-child)
+    margin-right: 10px
+.logo a
+  display: flex
+  padding-right: 102px
+  font-family: 'Yesteryear', cursive
+  font-size: 200%
+  color: #ffffff
+  text-decoration: none
+
+
+

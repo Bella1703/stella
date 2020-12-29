@@ -6,6 +6,7 @@ $font-family: Montserrat, sans-serif
 $font-size: 16px
 $primary-color: #ffffff
 $second-color: #fff568
+$grey-color: #595959
 
 =block()
   width: 100%
@@ -70,6 +71,7 @@ body
   min-height: 833px
   margin: auto
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/src/images/main.jpg") no-repeat top center
+  background-size: cover
   @media screen and (max-width: 575px)
     height: 100vh
 .first-block__content
@@ -145,3 +147,26 @@ h3
   line-height: $font-size * 1.875
 .next-paragraph
   padding-top: 20px
+
+.statistics
+  +block
+  margin: 100px 0 0
+  border: 1px solid $grey-color
+.statistics__content
+  +content
+  display: flex
+  justify-content: space-between
+  padding: 0px 0px
+  &:first-child
+    border-left: 1px solid $grey-color
+.statistics__cell
+  width: 25%
+  padding: 20px 10px
+  text-align: center
+  border-right: 1px solid $grey-color
+  p
+    color: $grey-color
+  div
+    font-size: $font-size * 4
+    line-height: $font-size * 6
+

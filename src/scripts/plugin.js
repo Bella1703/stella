@@ -1,4 +1,4 @@
-
+//слайдер первого блока
 $('.first-block-main').slick({
     dots: true,
     infinite: true,
@@ -12,4 +12,5 @@ $('.first-block-main').slick({
     draggable: true,
     adaptiveHeight: true,
 });
+
 

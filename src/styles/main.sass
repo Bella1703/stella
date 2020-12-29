@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yesteryear&display=swap')
 @import reset.css
 
-$font-stack: Helvetica, sans-serif
-$primary-color: #333
+$font-family: Helvetica, sans-serif
+$font-size: 16px
+$primary-color: #ffffff
+$second-color: #fff568
 
 body
+  display: flex
+  justify-content: center
   width: 100%
-  max-width: 1080px
   min-width: 555px
   margin: auto
-  font: 100% $font-stack
+  font: $font-size $font-family
+  line-height: $font-size*1.5
   color: $primary-color
   background-color: #111111
   @media screen and (max-width: 575px)
-    width: 555px
-    min-width: 555px
+    width: 575px
+    min-width: 575px
 .header
+  position: absolute
   display: flex
   justify-content: space-between
   align-items: center
@@ -39,5 +44,64 @@ body
   color: #ffffff
   text-decoration: none
 
-
-
+.first-block
+  display: flex
+  width: 100%
+  max-width: 1400px
+  min-width: 575px
+  height: calc(100vh - 100px)
+  max-height: 833px
+  margin: auto
+  padding: 100px 0 0
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/src/images/main.jpg") no-repeat top center
+  @media screen and (max-width: 575px)
+    width: 575px
+    min-width: 575px
+    height: 100vh
+.first-block__content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: calc(100% - 20px)
+  max-width: 1080px
+  min-width: 575px
+  height: 100%
+  margin: auto
+  padding: 0px 10px
+  @media screen and (max-width: 575px)
+    width: 555px
+    min-width: 555px
+.first-block__main
+  display: flex
+  align-items: center
+  width: calc(100% - 174px)
+  height: 100%
+  text-align: center
+.first-block__arrow-right, .first-block__arrow-left
+  cursor: pointer
+.first-block__arrow-right
+  transform: rotate(180deg)
+h1
+  margin: 0 0 30px
+  font-size: $font-size*2.5
+  line-height: $font-size*2.5*1.5
+.button
+  margin: 30px 10px
+  padding: 15px
+  text-transform: uppercase
+  border: 2px solid #ffffff
+  cursor: pointer
+.first-block-main p
+  padding-top: 30px
+.slick-dots
+  bottom: 30px
+.slick-dots  li
+  margin: 0
+.slick-dots  li button:before
+  color: $primary-color
+  opacity: 1
+  font-size: 40px
+.slick-dots  li.slick-active button:before
+  color: $second-color
+  opacity: 1
+  font-size: 40px

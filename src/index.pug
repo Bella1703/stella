@@ -1,8 +1,38 @@
-- var name = '@impulse'
 doctype html
 html
   head
     title Example
     meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" type="text/css" href="/src/styles/slick.css")
+    link(rel="stylesheet" type="text/css" href="/src/styles/slick-theme.css")
+    script(src="http://code.jquery.com/jquery-1.8.3.js")
   body
       include ./components/header.pug
+
+      div.first-block
+          div.first-block__content
+                div.first-block__arrow-left
+                    img(src="/src/images/arrow.png")
+                div.first-block__main.first-block-main
+                    div
+                        h1 Андрей и Ольга
+                        batton.button Смотреть альбом
+                        p 26 июня 2020 г.
+                    div
+                        h1 Игорь и Татьяна
+                        batton.button Смотреть альбом
+                        p 15 января 2019 г.
+                    div
+                        h1 Евгений и Софья
+                        batton.button Смотреть альбом
+                        p 3 августа 2020 г.
+                    div
+                        h1 Виталий и Мария
+                        batton.button Смотреть альбом
+                        p 8 сентября 2020 г.
+                div.first-block__arrow-right
+                    img(src="/src/images/arrow.png")
+      div.about-block
+          p.
+
+      script(type="text/javascript" src="/src/scripts/slick.min.js")
